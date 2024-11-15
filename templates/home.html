@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.curve/1.1.0/leaflet.curve.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>    
+    <title>Fly App</title>
+</head>
+<body>
+    <div class="globe-container" id="globe"></div>
+    <div class="sidebar">
+        <div class="left">
+            <p>Where are you flying?</p>
+            <input type="checkbox" id="return" checked> Return
+        </div>
+        <div class="right">
+            <input type="text" id="origin" placeholder="Origin" oninput="getSuggestions('origin')">
+            <div id="origin-suggestions" class="suggestions"></div>
+            
+            <input type="text" id="destination" placeholder="Destination" oninput="getSuggestions('destination')">
+            <div id="destination-suggestions" class="suggestions"></div>
+
+            <button id="calculate-emissions">Calculate Emissions</button>        </div>
+        </div>
+
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>
