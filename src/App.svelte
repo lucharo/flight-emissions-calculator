@@ -33,9 +33,6 @@
     error = null;
     selectedDest = airport;
     destCoords = [airport.latitude, airport.longitude];
-    if (selectedOrigin && selectedDest) {
-      calculateResult();
-    }
   }
 
   function calculateResult() {
