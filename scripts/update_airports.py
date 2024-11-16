@@ -9,19 +9,29 @@ import click
 from loguru import logger
 import pycountry
 
-# Major international hubs - top 100 by passenger traffic (2019 data)
+# Major international hubs - top 20 by passenger traffic (2021 data)
+# Source: https://aci.aero/2022/07/25/final-data-released-top-20-busiest-airports-confirmed/
 MAJOR_HUBS = {
-    "ATL": 110_531_300,  # Atlanta
-    "PEK": 100_011_438,  # Beijing
-    "LAX": 88_068_013,   # Los Angeles
-    "DXB": 86_396_757,   # Dubai
-    "HND": 85_505_054,   # Tokyo
-    "ORD": 84_649_115,   # Chicago
-    "LHR": 80_888_305,   # London
-    "PVG": 76_153_455,   # Shanghai
-    "CDG": 76_150_007,   # Paris
-    "DFW": 75_066_956,   # Dallas
-    # Add more as needed
+    "ATL": 75_704_760,  # Atlanta
+    "DFW": 62_465_756,  # Dallas/Fort Worth
+    "DEN": 58_828_552,  # Denver
+    "ORD": 54_020_399,  # Chicago O'Hare
+    "LAX": 48_007_284,  # Los Angeles
+    "CLT": 43_302_230,  # Charlotte
+    "MCO": 40_351_068,  # Orlando
+    "CAN": 40_259_401,  # Guangzhou
+    "LAS": 39_754_366,  # Las Vegas
+    "PHX": 38_834_677,  # Phoenix
+    "MIA": 37_701_292,  # Miami
+    "IST": 37_178_828,  # Istanbul
+    "SZX": 36_510_807,  # Shenzhen
+    "HND": 35_897_187,  # Tokyo Haneda
+    "PVG": 32_910_447,  # Shanghai Pudong
+    "IAH": 32_903_444,  # Houston
+    "LHR": 32_820_865,  # London Heathrow
+    "DEL": 37_140_000,  # Delhi
+    "CDG": 32_362_306,  # Paris Charles de Gaulle
+    "AMS": 31_588_031,  # Amsterdam
 }
 
 def calculate_airport_score(airport):
