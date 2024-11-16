@@ -260,7 +260,7 @@
 
 <!-- GitHub Link -->
 <a
-  href="https://github.com/yourusername/flight-emissions-calculator"
+  href="https://github.com/lucharo/flight-emissions-calculator"
   target="_blank"
   rel="noopener noreferrer"
   class="fixed bottom-4 left-4 z-20 bg-gray-900 text-white px-2 py-2 rounded-full flex items-center gap-2 hover:bg-gray-800 transition-colors"
