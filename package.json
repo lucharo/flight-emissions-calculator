@@ -1,0 +1,41 @@
+{
+  "name": "flight-emissions-calculator",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "update-airports": "python scripts/update_airports.py",
+    "update-airports:dry": "python scripts/update_airports.py --dry-run",
+    "update-airports:preview": "python scripts/update_airports.py --dry-run --preview-limit 100",
+    "update-airports:verbose": "python scripts/update_airports.py --verbose",
+    "build:prod": "vite build --mode production"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^2.4.2",
+    "@tsconfig/svelte": "^5.0.0",
+    "@types/node": "^20.11.24",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.24",
+    "svelte-check": "^3.4.6",
+    "tailwindcss": "^3.3.2",
+    "ts-node": "^10.9.2",
+    "tslib": "^2.6.0",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "zod": "^3.23.8"
+  },
+  "dependencies": {
+    "@types/leaflet": "^1.9.14",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "leaflet": "^1.9.4",
+    "svelte": "^4.0.5",
+    "tailwind-merge": "^2.5.4",
+    "tailwind-variants": "^0.3.0",
+    "tailwindcss-animate": "^1.0.7"
+  }
+}
